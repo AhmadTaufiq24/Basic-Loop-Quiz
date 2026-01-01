@@ -5,12 +5,24 @@
 function polaX(num) {
   let pattern = '';
   // code here
+  for (let i = 0; i < num; i++) {
+    for (let j = 0; j < num; j++) {
+      if (i === j) {
+        pattern += '*';
+      } else if (i + j === num - 1) {
+        pattern += '*';
+      } else {
+        pattern += ' ';
+      }
+    }
+    pattern += '\n';
+  }
   return pattern;
 }
 
 // use case
 console.log('\n--- Soal 11: Pola X ---');
-console.log(polaX(5));
+console.log(polaX(9));
 /*
 expected result
 *   *

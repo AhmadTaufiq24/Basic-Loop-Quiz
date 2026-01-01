@@ -5,6 +5,11 @@
 
 function abbrevName(name){
   //code here
+  for (i = 0; i < name.length; i++) {
+    if (name[i] == ' ') {
+      return name[0] + '.' + name[i + 1] + '.';
+    }
+  }
 }
 
 console.log(abbrevName("Sam Harris")); //S.H

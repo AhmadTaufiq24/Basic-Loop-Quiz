@@ -3,12 +3,17 @@
 //source: https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0
 
 function removeChar(str){
-  
+    let arr = str.split("");
+    let hasil = [];
+    for (i = 1; i < arr.length - 1; i++) {
+        hasil.push(arr[i]);
+    }
+    return hasil.join("");
 };
 
 console.log(removeChar('eloquent')); //loquen
 console.log(removeChar('country')); //ountr
 console.log(removeChar('person')); //ountr
 console.log(removeChar('place')); //lac
-console.log(removeChar('ab')) //
+console.log(removeChar('ab')) // 
 console.log(removeChar('ooopsss')); //oopss

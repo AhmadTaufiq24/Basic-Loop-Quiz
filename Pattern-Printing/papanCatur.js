@@ -4,6 +4,16 @@
 function papanCatur(num) {
   let pattern = '';
   // code here
+  for (let i = 1; i <= num; i++) {
+    for (let j = 1; j <= num; j++) {
+        if ((i + j) % 2 == 0) {
+          pattern += '#';
+        } else {
+          pattern += ' ';
+        }
+      }
+    pattern += '\n';
+  }
   return pattern;
 }
 
@@ -16,4 +26,16 @@ expected result
 # # #
  # # 
 # # #
+*/
+
+/* 
+01
+02
+03
+04
+05
+11
+12
+13
+14
 */

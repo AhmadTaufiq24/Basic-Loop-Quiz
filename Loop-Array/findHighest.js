@@ -4,7 +4,13 @@
 
 function findHighestInt(arr) {
   //your code here
-  
+  let small = arr[0];
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] < small) {
+      small = arr[i];
+    }
+  }
+  return small; 
 }
 
 console.log(findHighestInt([78,56,232,12,8])); //8

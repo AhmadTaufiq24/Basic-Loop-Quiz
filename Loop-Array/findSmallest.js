@@ -4,6 +4,13 @@
 
 function findSmallestInt(arr) {
   //your code here
+  let small = arr[0];
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] < small) {
+      small = arr[i];
+    }
+  }
+  return small;
   
 }
 

@@ -5,6 +5,11 @@
 
 function summation (num) {
   // Code here
+  let sumSemua = 0;
+  for (i = 1; i <= num; i++) {
+    sumSemua += i;
+  }
+  return sumSemua;
 }
 
 console.log(summation(1)); //1

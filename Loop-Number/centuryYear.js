@@ -6,7 +6,8 @@
 
 function century(year) {
   // Finish this :)
-  return;
+  let abad = Math.ceil(year / 100);
+  return abad;
 }
 
 console.log(century(1705)); //18
